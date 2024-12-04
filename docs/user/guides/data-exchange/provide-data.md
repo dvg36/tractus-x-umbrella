@@ -139,7 +139,7 @@ Once the asset is created, Alice (the data consumer) can try to request a catalo
 
 > **Note**
 > 
-> Alice can only see the offered data if a Access Policy was assigned.
+> Alice can only see the offered data if an Access Policy was assigned.
 
 ### Step 1: Request contract offers
 
@@ -147,7 +147,7 @@ Alice sends a `CatalogRequest` to Bob's connector to discover available assets:
 
 > **Note**
 > 
-> The request can alsop be filtered by an asset ID -> will be explained later
+> The request can also be filtered by an asset ID -> will be explained later
 
 ```bash
 curl -L -X POST 'http://dataconsumer-1-controlplane.tx.test/management/v2/catalog/request' \
@@ -333,7 +333,7 @@ curl -L -X POST 'http://dataprovider-controlplane.tx.test/management/v2/policyde
   }' | jq
 ```
 
-In this case a **Access Policy** is created. The assigned asset will only be visible as a data offer for the Business Partner Number `BPNL00000003AZQP`.
+In this case an **Access Policy** is created. The assigned asset will only be visible as a data offer for the Business Partner Number `BPNL00000003AZQP`.
 
 #### Expected Output
 

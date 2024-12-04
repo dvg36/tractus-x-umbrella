@@ -226,7 +226,7 @@ real life you would receive this information from the digital twin registry as a
 
 ```bash
 curl -L -X GET '{{ENDPOINT}}/urn:uuid:b77c6d51-cd1f-4c9d-b5d4-091b22dd306b' \
-  -H 'Authorization: {{TOKEN}}'
+  -H 'Authorization: {{TOKEN}}' | jq
 ```
 
 ### Fetch data response
